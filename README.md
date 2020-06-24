@@ -41,7 +41,7 @@ Enter words(enter '!' to exit):
 In case you enter words out of the vocabulary, the program ends.
 
 ***N** is numbers.*
-***'<unk>'** is a tag indicating unknown words.*
+***\<unk\>** is a tag indicating unknown words.*
 *(They were already preprocessed in the PTB dataset)*
 
 ### Generate Sentence using Pretrained Model
