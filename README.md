@@ -54,4 +54,4 @@ $ python sentence_generator.py --mode generate --model pretrained
 
 
 ### Result
-![ex_screenshot](./img/sentence_generator.png)
+![ex_screenshot](./sentence_generator.png)
