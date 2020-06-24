@@ -2,12 +2,12 @@
 
 
 ### Overview
-**Sentence Generator is a program to predict following words after entered words.**
-Sentence Generator uses a language model trained using PTB dataset.
-Deep Recursive Neural Network (with 2 LSTM Layers) is applied to implement the language model.
+**Sentence Generator is a program to predict following words after entered words.**  
+Sentence Generator uses a language model trained using PTB dataset.  
+Deep Recursive Neural Network (with 2 LSTM Layers) is applied to implement the language model.  
 
-Although the generated sentences are not quite perfect,
-**You will see it mimics the structure of sentences.**
+Although the generated sentences are not quite perfect  
+**You will see it mimics the structure of sentences.**  
 
 
 ### Requirements
@@ -22,7 +22,7 @@ Using Virtualenv is recommended.
 
 
 ### Dataset
-To train the model, Penn Tree Bank(PTB) dataset is used.
+To train the model, Penn Tree Bank(PTB) dataset is used.  
 Download 'ptb.train.txt' [here](https://github.com/tomsercu/lstm/tree/master/data) and place in ./data.
 
 
@@ -37,17 +37,17 @@ $ python word_sequence.py --mode train
 $ python word_sequence.py --mode pretrained
 Enter words(enter '!' to exit):
 ```
-**You can enter either a single word or multiple words.**
-In case you enter words out of the vocabulary, the program ends.
+**You can enter either a single word or multiple words.**  
+In case you enter words out of the vocabulary, the program ends.  
 
-***N** is numbers.*
-***\<unk\>** is a tag indicating unknown words.*
-*(They were already preprocessed in the PTB dataset)*
+***N** is numbers.*  
+***\<unk\>** is a tag indicating unknown words.*  
+*(They were already preprocessed in the PTB dataset)*  
 
 ### Generate Sentence using Pretrained Model
-If you want to use the sentence generator without training the model,
-Use '--model pretrained' option.
-(You need to download './pretrained')
+If you want to use the sentence generator without training the model,  
+Use '--model pretrained' option.  
+(You need to download './pretrained')  
 ```
 $ python sentence_generator.py --mode generate --model pretrained
 ```
