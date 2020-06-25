@@ -61,12 +61,13 @@ if arg.mode == 'train':
     sess = tf.Session(config=config)
     sess.run(tf.global_variables_initializer())
 
-    for i in range(20):
+    for i in range(21):
         for j in range(n_data//batch_size):
             batch_X, batch_Y, batch_seq = sess.run([datasetX, datasetY, seq_len_set])
             _, l = sess.run([optimizer, cost], feed_dict={X:batch_X, Y:batch_Y, seq_len:batch_seq})
             print(i, j, "cost: ", l)
-        saver.save(sess, 'model/train', global_step=i, max_to_keep=5)
+        if i%5 == 0:
+            saver.save(sess, 'model/train', global_step=i)
 
 if arg.mode == 'generate':
     # use pretrained model to predict word sequences
