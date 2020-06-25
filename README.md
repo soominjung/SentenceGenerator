@@ -3,7 +3,7 @@
 
 ### Overview
 **Sentence Generator is a program to predict following words after entered words.**  
-Sentence Generator uses a language model trained using PTB dataset.  
+Sentence Generator uses a language model trained with PTB dataset.  
 Deep Recursive Neural Network (with 2 LSTM Layers) is applied to implement the language model.  
 
 Although the generated sentences are not quite perfect  

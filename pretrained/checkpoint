@@ -1,6 +1,4 @@
 model_checkpoint_path: "train-10"
-all_model_checkpoint_paths: "train-6"
-all_model_checkpoint_paths: "train-7"
-all_model_checkpoint_paths: "train-8"
-all_model_checkpoint_paths: "train-9"
+all_model_checkpoint_paths: "train-0"
+all_model_checkpoint_paths: "train-5"
 all_model_checkpoint_paths: "train-10"
